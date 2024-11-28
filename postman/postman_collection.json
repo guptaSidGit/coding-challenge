@@ -1,0 +1,204 @@
+{
+	"info": {
+		"_postman_id": "be179a08-d0d8-4855-b10d-73603d4e24f4",
+		"name": "D&D Character API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38229205"
+	},
+	"item": [
+		{
+			"name": "Deal Damage",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "Content-Type of the request body"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"characterName\": \"Briv\", \"damageType\": \"bludgeoning\", \"damage\": 10}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/dealDamage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dealDamage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deal Damage Immunity",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "Content-Type of the request body"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"characterName\": \"Briv\", \"damageType\": \"fire\", \"damage\": 10}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/dealDamage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dealDamage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deal Damage Resistance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "Content-Type of the request body"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"characterName\": \"Briv\", \"damageType\": \"slashing\", \"damage\": 10}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/dealDamage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dealDamage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Heal Character",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "Content-Type of the request body"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"characterName\": \"Briv\", \"healingAmount\": 5}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/heal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"heal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Temporary HP",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "Content-Type of the request body"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"characterName\": \"Briv\", \"tempHP\": 15}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/addTemporaryHP",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addTemporaryHP"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Less Temporary HP",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "Content-Type of the request body"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"characterName\": \"Briv\", \"tempHP\": 3}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/addTemporaryHP",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addTemporaryHP"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Character",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/character/Briv",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"character",
+						"Briv"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
