@@ -23,7 +23,7 @@ Place character JSON files into the characters folder. Each character file shoul
 
 Start the server:
 
-npm start
+npm start  
 The server will read the JSON files in the characters folder and insert the character data into MongoDB if the character is not already present in the database.
 
 API Endpoints can be found in postman/postman_collection.json
